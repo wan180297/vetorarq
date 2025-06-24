@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+}
+#banner a img {
+    max-width: 1140px;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1140px;
+    padding: 96px 12px;
+    display: flex;
+}
+.title {
+    flex: 1;
+}
+.value-projects {
+    flex: 1;
+    text-align: right;
+}
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.title-main {
+    font-size: 44px;
+    margin-bottom: 24px;
+}
+.title-main-paragraph {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+.border-value {
+    padding: 24px;
+    background-color: #F9F8FC;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+.border-value-center {
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.money-value {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.title-value {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+}
+.bar {
+    height: 4px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+.bar-green {
+    height: 4px;
+    background-color: #35A552;
+}
+main {
+    background-color: #F9F8FC;
+    display: flex;
+    justify-content: center;
+    padding: 96px 12px;
+}
+.container-projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    margin-bottom: 32px;
+}
+.title-list-projects {
+    font-size: 44px;
+    font-weight: bold;
+}
+.list ul {
+    display: flex;
+} 
+.list ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+.list ul li a {
+    text-decoration: none;
+    color: #1A1726;
+    cursor: pointer;
+    font-size: 16px;
+}
+.list ul li a:hover {
+    color: #7360F2;
+}
+.list ul li a.active {
+    color: #ffffff;
+    padding: 8px 16px;
+    background-color: #7360F2;
+    border-radius: 3px;
+}
+.projects-images-desc {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.projects-desc img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.projects-desc img:hover {
+    transform: scale(1.03);
+}
+.projects-desc h5 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.projects-desc p {
+    font-size: 16px;
+}
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column;
+    padding: 48px 12px;
+    align-items: center;
+    text-align: center;
+  }
+  #banner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+#banner a {
+  display: block; /* garante que o link ocupe toda a largura disponível */
+}
+
+#banner a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 150px; /* opcional para limitar a altura */
+  object-fit: contain; /* mantém proporção e não corta */
+}
+  .title {
+    flex: none;
+    margin-bottom: 30px;
+  }
+
+  .value-projects {
+    flex: none;
+    text-align: center;
+  }
+
+  .value {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .border-value-center {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .projects-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .list ul {
+    flex-wrap: wrap;
+  }
+
+  .list ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .projects-images-desc {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Celulares - até 600px */
+@media (max-width: 600px) {
+  header .container {
+    padding: 30px 12px;
+  }
+  #banner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+#banner a {
+  display: block; /* garante que o link ocupe toda a largura disponível */
+}
+
+#banner a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 150px; /* opcional para limitar a altura */
+  object-fit: contain; /* mantém proporção e não corta */
+}
+  .title-main {
+    font-size: 28px;
+  }
+
+  .title-main-paragraph,
+  .projects-desc p,
+  .title-value,
+  .list ul li a {
+    font-size: 14px;
+  }
+
+  .value {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .border-value,
+  .border-value-center {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .value-projects {
+    text-align: center;
+  }
+
+  .projects-list {
+    align-items: center;
+  }
+
+  .projects-images-desc {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .projects-desc h5 {
+    font-size: 18px;
+  }
+}
